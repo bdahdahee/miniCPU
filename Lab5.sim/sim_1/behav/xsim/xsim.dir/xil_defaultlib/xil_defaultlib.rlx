@@ -1,0 +1,7 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sim_1/new/systemtest.v,1574066016,verilog,,,,systemtest,,,,,,,,
+C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v,1576961655,verilog,,C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sim_1/new/systemtest.v,,EXE_MEM;ID_EXE;IF_ID;MEM_WB;PC;adder;alu;control_unit;datamemory;forwarding_unit;instmem;mux1;mux2;mux3;mux4;mux5;regfile;signextender;system,,,,,,,,

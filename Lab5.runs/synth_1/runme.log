@@ -1,0 +1,757 @@
+
+*** Running vivado
+    with args -log system.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source system.tcl -notrace
+Command: synth_design -top system -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19568 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 703.539 ; gain = 177.941
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:9]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:212]
+INFO: [Synth 8-4471] merging register 'pctomem_reg[31:0]' into 'pcout_reg[31:0]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:220]
+WARNING: [Synth 8-6014] Unused sequential element pctomem_reg was removed.  [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:220]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (1#1) [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:212]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:226]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (2#1) [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:226]
+INFO: [Synth 8-6157] synthesizing module 'instmem' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:237]
+INFO: [Synth 8-6155] done synthesizing module 'instmem' (3#1) [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:237]
+INFO: [Synth 8-6157] synthesizing module 'IF_ID' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:257]
+INFO: [Synth 8-4471] merging register 'if_idoutmux_reg[31:0]' into 'if_idoutcontrol_reg[31:0]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:265]
+INFO: [Synth 8-4471] merging register 'if_idoutreg_reg[31:0]' into 'if_idoutcontrol_reg[31:0]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:266]
+INFO: [Synth 8-4471] merging register 'if_idoutextender_reg[31:0]' into 'if_idoutcontrol_reg[31:0]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:267]
+INFO: [Synth 8-4471] merging register 'if_idout_reg[31:0]' into 'if_idoutcontrol_reg[31:0]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:268]
+WARNING: [Synth 8-6014] Unused sequential element if_idoutmux_reg was removed.  [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:265]
+WARNING: [Synth 8-6014] Unused sequential element if_idoutreg_reg was removed.  [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:266]
+WARNING: [Synth 8-6014] Unused sequential element if_idoutextender_reg was removed.  [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:267]
+WARNING: [Synth 8-6014] Unused sequential element if_idout_reg was removed.  [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:268]
+INFO: [Synth 8-6155] done synthesizing module 'IF_ID' (4#1) [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:257]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:273]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (5#1) [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:273]
+WARNING: [Synth 8-689] width (32) of port connection 'wreg' does not match port width (1) of module 'control_unit' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:51]
+WARNING: [Synth 8-689] width (32) of port connection 'm2reg' does not match port width (1) of module 'control_unit' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:52]
+WARNING: [Synth 8-689] width (32) of port connection 'wmem' does not match port width (1) of module 'control_unit' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:53]
+WARNING: [Synth 8-689] width (32) of port connection 'aluc' does not match port width (4) of module 'control_unit' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:54]
+WARNING: [Synth 8-689] width (32) of port connection 'aluimm' does not match port width (1) of module 'control_unit' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:55]
+WARNING: [Synth 8-689] width (32) of port connection 'regrt' does not match port width (1) of module 'control_unit' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:56]
+INFO: [Synth 8-6157] synthesizing module 'mux1' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:345]
+WARNING: [Synth 8-567] referenced signal 'regrt' should be on the sensitivity list [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:351]
+INFO: [Synth 8-6155] done synthesizing module 'mux1' (6#1) [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:345]
+WARNING: [Synth 8-689] width (32) of port connection 'regrt' does not match port width (1) of module 'mux1' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:60]
+WARNING: [Synth 8-689] width (32) of port connection 'muxout' does not match port width (5) of module 'mux1' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:62]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:368]
+WARNING: [Synth 8-567] referenced signal 'we' should be on the sensitivity list [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:393]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (7#1) [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:368]
+WARNING: [Synth 8-689] width (32) of port connection 'wn' does not match port width (5) of module 'regfile' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:69]
+WARNING: [Synth 8-689] width (32) of port connection 'we' does not match port width (1) of module 'regfile' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:70]
+INFO: [Synth 8-6157] synthesizing module 'signextender' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'signextender' (8#1) [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:407]
+INFO: [Synth 8-6157] synthesizing module 'ID_EXE' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:420]
+WARNING: [Synth 8-6014] Unused sequential element rs_reg was removed.  [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:433]
+WARNING: [Synth 8-6014] Unused sequential element rt_reg was removed.  [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:434]
+WARNING: [Synth 8-6014] Unused sequential element rd_reg was removed.  [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:435]
+INFO: [Synth 8-4471] merging register 'qbout2_reg[31:0]' into 'qbout_reg[31:0]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:444]
+WARNING: [Synth 8-6014] Unused sequential element qbout2_reg was removed.  [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:444]
+INFO: [Synth 8-6155] done synthesizing module 'ID_EXE' (9#1) [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:420]
+WARNING: [Synth 8-689] width (32) of port connection 'wregin' does not match port width (1) of module 'ID_EXE' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:82]
+WARNING: [Synth 8-689] width (32) of port connection 'm2regin' does not match port width (1) of module 'ID_EXE' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:83]
+WARNING: [Synth 8-689] width (32) of port connection 'wmemin' does not match port width (1) of module 'ID_EXE' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:84]
+WARNING: [Synth 8-689] width (32) of port connection 'alucin' does not match port width (4) of module 'ID_EXE' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:85]
+WARNING: [Synth 8-689] width (32) of port connection 'aluimmin' does not match port width (1) of module 'ID_EXE' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:86]
+WARNING: [Synth 8-689] width (32) of port connection 'muxresultin' does not match port width (5) of module 'ID_EXE' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:87]
+WARNING: [Synth 8-689] width (32) of port connection 'wregout' does not match port width (1) of module 'ID_EXE' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:91]
+WARNING: [Synth 8-689] width (32) of port connection 'm2regout' does not match port width (1) of module 'ID_EXE' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:92]
+WARNING: [Synth 8-689] width (32) of port connection 'wmemout' does not match port width (1) of module 'ID_EXE' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:93]
+WARNING: [Synth 8-689] width (32) of port connection 'aluimmout' does not match port width (1) of module 'ID_EXE' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:94]
+WARNING: [Synth 8-689] width (32) of port connection 'muxresultout' does not match port width (5) of module 'ID_EXE' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:99]
+WARNING: [Synth 8-689] width (32) of port connection 'rsout' does not match port width (5) of module 'ID_EXE' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:101]
+WARNING: [Synth 8-689] width (32) of port connection 'rtout' does not match port width (5) of module 'ID_EXE' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:102]
+WARNING: [Synth 8-689] width (32) of port connection 'rdout' does not match port width (5) of module 'ID_EXE' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:103]
+WARNING: [Synth 8-689] width (32) of port connection 'alucout' does not match port width (4) of module 'ID_EXE' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:104]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:551]
+WARNING: [Synth 8-567] referenced signal 'aluimm_mux' should be on the sensitivity list [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:556]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (10#1) [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:551]
+WARNING: [Synth 8-689] width (32) of port connection 'aluimm_mux' does not match port width (1) of module 'mux2' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:108]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:570]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (11#1) [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:570]
+WARNING: [Synth 8-689] width (32) of port connection 'aluc' does not match port width (4) of module 'alu' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:115]
+INFO: [Synth 8-6157] synthesizing module 'EXE_MEM' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:601]
+INFO: [Synth 8-4471] merging register 'mwreg2_reg' into 'mwreg_reg' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:612]
+INFO: [Synth 8-4471] merging register 'mmux1result2_reg[4:0]' into 'mmux1result_reg[4:0]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:616]
+INFO: [Synth 8-4471] merging register 'mr2_reg[31:0]' into 'mr_reg[31:0]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:618]
+INFO: [Synth 8-4471] merging register 'mrd2_reg[4:0]' into 'mrd_reg[4:0]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:621]
+INFO: [Synth 8-4471] merging register 'mr3_reg[31:0]' into 'mr_reg[31:0]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:622]
+INFO: [Synth 8-4471] merging register 'mr4_reg[31:0]' into 'mr_reg[31:0]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:623]
+WARNING: [Synth 8-6014] Unused sequential element mwreg2_reg was removed.  [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:612]
+WARNING: [Synth 8-6014] Unused sequential element mmux1result2_reg was removed.  [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:616]
+WARNING: [Synth 8-6014] Unused sequential element mr2_reg was removed.  [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:618]
+WARNING: [Synth 8-6014] Unused sequential element mrd2_reg was removed.  [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:621]
+WARNING: [Synth 8-6014] Unused sequential element mr3_reg was removed.  [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:622]
+WARNING: [Synth 8-6014] Unused sequential element mr4_reg was removed.  [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:623]
+INFO: [Synth 8-6155] done synthesizing module 'EXE_MEM' (12#1) [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:601]
+WARNING: [Synth 8-689] width (32) of port connection 'ewreg' does not match port width (1) of module 'EXE_MEM' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:123]
+WARNING: [Synth 8-689] width (32) of port connection 'em2reg' does not match port width (1) of module 'EXE_MEM' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:124]
+WARNING: [Synth 8-689] width (32) of port connection 'ewmem' does not match port width (1) of module 'EXE_MEM' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:125]
+WARNING: [Synth 8-689] width (32) of port connection 'emux1result' does not match port width (5) of module 'EXE_MEM' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:127]
+WARNING: [Synth 8-689] width (32) of port connection 'mwreg' does not match port width (1) of module 'EXE_MEM' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:132]
+WARNING: [Synth 8-689] width (32) of port connection 'mm2reg' does not match port width (1) of module 'EXE_MEM' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:133]
+WARNING: [Synth 8-689] width (32) of port connection 'mmux1result' does not match port width (5) of module 'EXE_MEM' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:134]
+WARNING: [Synth 8-689] width (32) of port connection 'rd' does not match port width (5) of module 'EXE_MEM' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:136]
+WARNING: [Synth 8-689] width (32) of port connection 'mrd' does not match port width (5) of module 'EXE_MEM' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:137]
+WARNING: [Synth 8-689] width (32) of port connection 'mmux1result2' does not match port width (5) of module 'EXE_MEM' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:138]
+WARNING: [Synth 8-689] width (32) of port connection 'mwreg2' does not match port width (1) of module 'EXE_MEM' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:139]
+WARNING: [Synth 8-7023] instance 'exe_mem_instance' of module 'EXE_MEM' has 21 connections declared, but only 19 given [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:122]
+INFO: [Synth 8-6157] synthesizing module 'datamemory' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:629]
+INFO: [Synth 8-6155] done synthesizing module 'datamemory' (13#1) [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:629]
+INFO: [Synth 8-6157] synthesizing module 'MEM_WB' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:658]
+INFO: [Synth 8-4471] merging register 'wwreg2_reg' into 'wwreg_reg' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:669]
+INFO: [Synth 8-4471] merging register 'wmux1result2_reg[4:0]' into 'wmux1result_reg[4:0]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:672]
+WARNING: [Synth 8-6014] Unused sequential element wwreg2_reg was removed.  [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:669]
+WARNING: [Synth 8-6014] Unused sequential element wmux1result2_reg was removed.  [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:672]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_WB' (14#1) [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:658]
+WARNING: [Synth 8-689] width (32) of port connection 'mwreg' does not match port width (1) of module 'MEM_WB' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:154]
+WARNING: [Synth 8-689] width (32) of port connection 'mm2reg' does not match port width (1) of module 'MEM_WB' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:155]
+WARNING: [Synth 8-689] width (32) of port connection 'mmux1result' does not match port width (5) of module 'MEM_WB' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:156]
+WARNING: [Synth 8-689] width (32) of port connection 'wwreg' does not match port width (1) of module 'MEM_WB' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:159]
+WARNING: [Synth 8-689] width (32) of port connection 'wm2reg' does not match port width (1) of module 'MEM_WB' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:160]
+WARNING: [Synth 8-689] width (32) of port connection 'wmux1result' does not match port width (5) of module 'MEM_WB' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:161]
+WARNING: [Synth 8-689] width (32) of port connection 'mrd' does not match port width (5) of module 'MEM_WB' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:164]
+WARNING: [Synth 8-689] width (32) of port connection 'wmux1result2' does not match port width (5) of module 'MEM_WB' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:165]
+WARNING: [Synth 8-689] width (32) of port connection 'wwreg2' does not match port width (1) of module 'MEM_WB' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:166]
+WARNING: [Synth 8-7023] instance 'mem_wb_instance' of module 'MEM_WB' has 15 connections declared, but only 14 given [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:152]
+INFO: [Synth 8-6157] synthesizing module 'mux3' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:680]
+WARNING: [Synth 8-567] referenced signal 'wm2reg' should be on the sensitivity list [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:685]
+INFO: [Synth 8-6155] done synthesizing module 'mux3' (15#1) [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:680]
+WARNING: [Synth 8-689] width (32) of port connection 'wm2reg' does not match port width (1) of module 'mux3' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:173]
+INFO: [Synth 8-6157] synthesizing module 'forwarding_unit' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:453]
+WARNING: [Synth 8-6090] variable 'x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:469]
+WARNING: [Synth 8-6090] variable 'y' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:474]
+WARNING: [Synth 8-6090] variable 'x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:483]
+WARNING: [Synth 8-6090] variable 'forwardb' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:487]
+WARNING: [Synth 8-6090] variable 'y' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:488]
+WARNING: [Synth 8-6090] variable 'forwarda' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:493]
+WARNING: [Synth 8-6090] variable 'forwardb' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:497]
+WARNING: [Synth 8-567] referenced signal 'mwreg' should be on the sensitivity list [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:460]
+WARNING: [Synth 8-567] referenced signal 'wwreg' should be on the sensitivity list [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:460]
+INFO: [Synth 8-6155] done synthesizing module 'forwarding_unit' (16#1) [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:453]
+WARNING: [Synth 8-689] width (32) of port connection 'rs' does not match port width (5) of module 'forwarding_unit' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:181]
+WARNING: [Synth 8-689] width (32) of port connection 'rt' does not match port width (5) of module 'forwarding_unit' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:182]
+WARNING: [Synth 8-689] width (32) of port connection 'ex_rd' does not match port width (5) of module 'forwarding_unit' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:183]
+WARNING: [Synth 8-689] width (32) of port connection 'wb_rd' does not match port width (5) of module 'forwarding_unit' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:184]
+WARNING: [Synth 8-689] width (32) of port connection 'mwreg' does not match port width (1) of module 'forwarding_unit' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:185]
+WARNING: [Synth 8-689] width (32) of port connection 'wwreg' does not match port width (1) of module 'forwarding_unit' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:186]
+WARNING: [Synth 8-689] width (32) of port connection 'forwarda' does not match port width (2) of module 'forwarding_unit' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:187]
+WARNING: [Synth 8-689] width (32) of port connection 'forwardb' does not match port width (2) of module 'forwarding_unit' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:188]
+INFO: [Synth 8-6157] synthesizing module 'mux4' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:504]
+INFO: [Synth 8-6155] done synthesizing module 'mux4' (17#1) [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:504]
+WARNING: [Synth 8-689] width (32) of port connection 'forwardA' does not match port width (2) of module 'mux4' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:197]
+INFO: [Synth 8-6157] synthesizing module 'mux5' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:528]
+INFO: [Synth 8-6155] done synthesizing module 'mux5' (18#1) [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:528]
+WARNING: [Synth 8-689] width (32) of port connection 'forwardB' does not match port width (2) of module 'mux5' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:206]
+INFO: [Synth 8-6155] done synthesizing module 'system' (19#1) [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:9]
+WARNING: [Synth 8-3917] design system has port out driven by constant 0
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[31]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[30]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[29]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[28]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[27]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[26]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[25]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[24]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[23]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[22]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[21]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[20]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[19]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[18]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[17]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[16]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[15]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[14]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[13]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[12]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[11]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[10]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[9]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[8]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[7]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[6]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[5]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[4]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[3]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[2]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[1]
+WARNING: [Synth 8-3331] design datamemory has unconnected port writedata[0]
+WARNING: [Synth 8-3331] design ID_EXE has unconnected port instruction[31]
+WARNING: [Synth 8-3331] design ID_EXE has unconnected port instruction[30]
+WARNING: [Synth 8-3331] design ID_EXE has unconnected port instruction[29]
+WARNING: [Synth 8-3331] design ID_EXE has unconnected port instruction[28]
+WARNING: [Synth 8-3331] design ID_EXE has unconnected port instruction[27]
+WARNING: [Synth 8-3331] design ID_EXE has unconnected port instruction[26]
+WARNING: [Synth 8-3331] design ID_EXE has unconnected port instruction[10]
+WARNING: [Synth 8-3331] design ID_EXE has unconnected port instruction[9]
+WARNING: [Synth 8-3331] design ID_EXE has unconnected port instruction[8]
+WARNING: [Synth 8-3331] design ID_EXE has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design ID_EXE has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design ID_EXE has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design ID_EXE has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design ID_EXE has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design ID_EXE has unconnected port instruction[2]
+WARNING: [Synth 8-3331] design ID_EXE has unconnected port instruction[1]
+WARNING: [Synth 8-3331] design ID_EXE has unconnected port instruction[0]
+WARNING: [Synth 8-3331] design signextender has unconnected port signextenderin[31]
+WARNING: [Synth 8-3331] design signextender has unconnected port signextenderin[30]
+WARNING: [Synth 8-3331] design signextender has unconnected port signextenderin[29]
+WARNING: [Synth 8-3331] design signextender has unconnected port signextenderin[28]
+WARNING: [Synth 8-3331] design signextender has unconnected port signextenderin[27]
+WARNING: [Synth 8-3331] design signextender has unconnected port signextenderin[26]
+WARNING: [Synth 8-3331] design signextender has unconnected port signextenderin[25]
+WARNING: [Synth 8-3331] design signextender has unconnected port signextenderin[24]
+WARNING: [Synth 8-3331] design signextender has unconnected port signextenderin[23]
+WARNING: [Synth 8-3331] design signextender has unconnected port signextenderin[22]
+WARNING: [Synth 8-3331] design signextender has unconnected port signextenderin[21]
+WARNING: [Synth 8-3331] design signextender has unconnected port signextenderin[20]
+WARNING: [Synth 8-3331] design signextender has unconnected port signextenderin[19]
+WARNING: [Synth 8-3331] design signextender has unconnected port signextenderin[18]
+WARNING: [Synth 8-3331] design signextender has unconnected port signextenderin[17]
+WARNING: [Synth 8-3331] design signextender has unconnected port signextenderin[16]
+WARNING: [Synth 8-3331] design regfile has unconnected port regfilein[31]
+WARNING: [Synth 8-3331] design regfile has unconnected port regfilein[30]
+WARNING: [Synth 8-3331] design regfile has unconnected port regfilein[29]
+WARNING: [Synth 8-3331] design regfile has unconnected port regfilein[28]
+WARNING: [Synth 8-3331] design regfile has unconnected port regfilein[27]
+WARNING: [Synth 8-3331] design regfile has unconnected port regfilein[26]
+WARNING: [Synth 8-3331] design regfile has unconnected port regfilein[15]
+WARNING: [Synth 8-3331] design regfile has unconnected port regfilein[14]
+WARNING: [Synth 8-3331] design regfile has unconnected port regfilein[13]
+WARNING: [Synth 8-3331] design regfile has unconnected port regfilein[12]
+WARNING: [Synth 8-3331] design regfile has unconnected port regfilein[11]
+WARNING: [Synth 8-3331] design regfile has unconnected port regfilein[10]
+WARNING: [Synth 8-3331] design regfile has unconnected port regfilein[9]
+WARNING: [Synth 8-3331] design regfile has unconnected port regfilein[8]
+WARNING: [Synth 8-3331] design regfile has unconnected port regfilein[7]
+WARNING: [Synth 8-3331] design regfile has unconnected port regfilein[6]
+WARNING: [Synth 8-3331] design regfile has unconnected port regfilein[5]
+WARNING: [Synth 8-3331] design regfile has unconnected port regfilein[4]
+WARNING: [Synth 8-3331] design regfile has unconnected port regfilein[3]
+WARNING: [Synth 8-3331] design regfile has unconnected port regfilein[2]
+WARNING: [Synth 8-3331] design regfile has unconnected port regfilein[1]
+WARNING: [Synth 8-3331] design regfile has unconnected port regfilein[0]
+WARNING: [Synth 8-3331] design mux1 has unconnected port muxin[31]
+WARNING: [Synth 8-3331] design mux1 has unconnected port muxin[30]
+WARNING: [Synth 8-3331] design mux1 has unconnected port muxin[29]
+WARNING: [Synth 8-3331] design mux1 has unconnected port muxin[28]
+WARNING: [Synth 8-3331] design mux1 has unconnected port muxin[27]
+WARNING: [Synth 8-3331] design mux1 has unconnected port muxin[26]
+WARNING: [Synth 8-3331] design mux1 has unconnected port muxin[25]
+WARNING: [Synth 8-3331] design mux1 has unconnected port muxin[24]
+WARNING: [Synth 8-3331] design mux1 has unconnected port muxin[23]
+WARNING: [Synth 8-3331] design mux1 has unconnected port muxin[22]
+WARNING: [Synth 8-3331] design mux1 has unconnected port muxin[21]
+WARNING: [Synth 8-3331] design mux1 has unconnected port muxin[10]
+WARNING: [Synth 8-3331] design mux1 has unconnected port muxin[9]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 768.000 ; gain = 242.402
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 768.000 ; gain = 242.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 768.000 ; gain = 242.402
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Sourcing Tcl File [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/constrs_1/new/constraint.tcl]
+Finished Sourcing Tcl File [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/constrs_1/new/constraint.tcl]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/constrs_1/new/constraint.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 878.844 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 878.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 878.844 ; gain = 353.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 878.844 ; gain = 353.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 878.844 ; gain = 353.246
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "im" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:581]
+INFO: [Synth 8-5546] ROM "data" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'wreg_reg' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:287]
+WARNING: [Synth 8-327] inferring latch for variable 'm2reg_reg' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:288]
+WARNING: [Synth 8-327] inferring latch for variable 'wmem_reg' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:289]
+WARNING: [Synth 8-327] inferring latch for variable 'aluc_reg' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:290]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[31]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[30]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[29]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[28]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[27]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[26]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[25]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[24]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[23]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[22]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[21]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[20]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[19]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[18]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[17]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[16]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[15]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[14]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[13]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[12]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[11]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[10]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[9]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[8]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[7]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[6]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[5]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[4]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[3]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[2]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[1]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'regs_reg[0]' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:399]
+WARNING: [Synth 8-327] inferring latch for variable 'aluout_reg' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:579]
+WARNING: [Synth 8-327] inferring latch for variable 'mux4out_reg' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:513]
+WARNING: [Synth 8-327] inferring latch for variable 'mux5out_reg' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:537]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 878.844 ; gain = 353.246
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 9     
+	                5 Bit    Registers := 8     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	  33 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 42    
+	   5 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module instmem 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 1     
+Module IF_ID 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module control_unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   5 Input      1 Bit        Muxes := 2     
+Module mux1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module ID_EXE 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+Module EXE_MEM 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
+Module datamemory 
+Detailed RTL Component Info : 
++---Muxes : 
+	  33 Input     32 Bit        Muxes := 1     
+Module MEM_WB 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
+Module mux3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module forwarding_unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+Module mux4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module mux5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'id_exe_instance/aluimmout_reg' into 'id_exe_instance/m2regout_reg' [C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.srcs/sources_1/new/system.v:440]
+WARNING: [Synth 8-3917] design system has port out driven by constant 0
+WARNING: [Synth 8-3332] Sequential element (controlu_instance/wreg_reg) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (controlu_instance/m2reg_reg) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (controlu_instance/wmem_reg) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (controlu_instance/aluc_reg[3]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (controlu_instance/aluc_reg[2]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (controlu_instance/aluc_reg[1]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (controlu_instance/aluc_reg[0]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][31]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][30]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][29]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][28]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][27]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][26]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][25]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][24]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][23]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][22]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][21]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][20]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][19]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][18]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][17]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][16]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][15]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][14]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][13]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][12]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][11]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][10]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][9]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][8]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][7]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][6]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][5]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][4]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][3]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][2]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][1]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[31][0]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][31]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][30]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][29]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][28]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][27]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][26]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][25]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][24]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][23]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][22]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][21]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][20]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][19]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][18]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][17]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][16]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][15]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][14]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][13]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][12]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][11]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][10]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][9]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][8]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][7]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][6]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][5]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][4]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][3]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][2]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][1]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[30][0]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][31]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][30]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][29]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][28]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][27]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][26]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][25]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][24]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][23]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][22]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][21]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][20]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][19]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][18]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][17]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][16]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][15]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][14]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][13]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][12]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][11]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][10]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][9]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][8]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][7]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][6]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][5]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][4]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (regfile_intstance/regs_reg[29][3]) is unused and will be removed from module system.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 878.844 ; gain = 353.246
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 878.844 ; gain = 353.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 878.844 ; gain = 353.246
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 878.844 ; gain = 353.246
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 883.945 ; gain = 358.348
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 883.945 ; gain = 358.348
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 883.945 ; gain = 358.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 883.945 ; gain = 358.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 883.945 ; gain = 358.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 883.945 ; gain = 358.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |OBUF |     1|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     1|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 883.945 ; gain = 358.348
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1189 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 883.945 ; gain = 247.504
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 883.945 ; gain = 358.348
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 903.195 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+68 Infos, 333 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 903.195 ; gain = 606.668
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 903.195 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/behza/Desktop/cmpen331/Lab5/Lab5/Lab5.runs/synth_1/system.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_utilization_synth.rpt -pb system_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 21 16:36:21 2019...
